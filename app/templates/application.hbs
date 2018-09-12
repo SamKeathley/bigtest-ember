@@ -1,5 +1,6 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div data-test-counter>
+  <button data-test-increment onclick={{action 'increment'}} >Increment</button>
+  <span data-test-count>
+    {{liquid-bind count}}
+  </span>
+</div>
